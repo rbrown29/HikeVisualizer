@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Angel's Rest</title>
+    <link
+      rel="icon"
+      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.visitoregon.com%2Fwp-content%2Fuploads%2F2019%2F04%2Ffavicon-oregon.png&f=1&nofb=1&ipt=f7a850c9079ccad55b38256e15f82a530092bf25960186c7cdbf14c06ebb1068&ipo=images"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@arcgis/core@4.19.1/assets/esri/themes/light/main.css"
+    />
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+    <div class="main">
+      <div class="title">
+        <h3>Angel's Rest</h3>
+      </div>
+      <div class="sections">
+        <div class="section">
+          <div id="miniMap"></div>
+        </div>
+        <div class="section">
+          <button id="openButton">View Angel's Rest</button>
+          <button id="hikeHome">Oregon Hikes</button>
+          <br />
+          <br />
+          <div class="video-container">
+            <video
+              id="video"
+              src="/assets/video/AngelsRest.mp4"
+              title="Angels Rest"
+              controls
+            ></video>
+            <i id="video-overlay" class="fas fa-play-circle"></i>
+          </div>
+          <p>
+            Angels Rest is an exposed bluff on the western end of the Columbia
+            River Gorge. The platy andesite that composes this promontory is
+            part of a million-year-old lava flow from Larch Mountain, a member
+            of the Boring Lava Field. The summit is characterized by a long,
+            rocky spine surrounded on three sides by cliffs, boasting a striking
+            270 degree view!
+          </p>
+          <div id="profile"></div>
+          <p> Created by: <a href="https://interactive-reality.netlify.app/" target="_blank">Richard Brown</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const openButton = document.getElementById("openButton");
+      openButton.addEventListener("click", () => {
+        window.open("https://oregon-hikes.onrender.com/viewhike/1", "_blank");
+      });
+
+      const hikeHome = document.getElementById("hikeHome");
+      hikeHome.addEventListener("click", () => {
+        window.open("https://oregon-hikes.onrender.com/", "_blank");
+      });
+
+      const video = document.getElementById("video");
+      const videoOverlay = document.getElementById("video-overlay");
+
+      videoOverlay.addEventListener("click", () => {
+        if (video.paused) {
+          video.play();
+          videoOverlay.style.display = "none";
+        } else {
+          video.pause();
+          videoOverlay.style.display = "block";
+        }
+      });
+
+      video.addEventListener("play", () => {
+        videoOverlay.style.display = "none";
+      });
+
+      video.addEventListener("pause", () => {
+        videoOverlay.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

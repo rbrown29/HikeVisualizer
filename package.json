@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@tmcw/togeojson": "^4.3.0",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.4.7",
+    "fast-xml-parser": "^4.5.1",
+    "tcx-js": "^1.0.1",
+    "timers-browserify": "^2.0.12"
+  },
+  "devDependencies": {
+    "@arcgis/core": "^4.31.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.49",
+    "serve": "^11.3.2",
+    "webpack": "^5.97.1",
+    "webpack-bundle-analyzer": "^4.3.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build:angelsRest": "webpack --entry ./src/index.js --output-path ./dist/AngelsRest/$(date +%Y%m%d%H%M%S) --output-filename AngelsRest.bundle.js",
+    "build:smithRock": "webpack --entry ./src/smithRock.js --output-path ./dist/SmithRock/$(date +%Y%m%d%H%M%S) --output-filename SmithRock.bundle.js",
+    "build:eagleCreek": "webpack --entry ./src/index.js --output-path ./dist/EagleCreek/$(date +%Y%m%d%H%M%S) --output-filename EagleCreek.bundle.js",
+    "watch": "webpack -w",
+    "start": "webpack serve --mode development"
+  }
+}
