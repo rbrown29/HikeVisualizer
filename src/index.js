@@ -74,16 +74,15 @@ const miniMap = new MapView({
   },
 });
 
-// Add Weather Widget
+// Add Weather Widget to Profile Section
+const profileContainer = document.getElementById('profile');
 const weatherWidget = document.createElement('div');
 weatherWidget.className = 'weather-widget';
 weatherWidget.innerHTML = `
-  <div class="weather-header">
-    <h3><i class="fas fa-cloud-sun"></i> Weather Info</h3>
-  </div>
-  <div id="weather-data">Loading...</div>
+  <h4 style="margin-bottom: 10px;">Weather Information</h4>
+  <div id="weather-data" style="line-height: 1.5;">Loading weather data...</div>
 `;
-document.body.appendChild(weatherWidget);
+profileContainer.appendChild(weatherWidget);
 
 // Fetch and display weather data
 function fetchWeather(lat, lon) {
@@ -93,15 +92,18 @@ function fetchWeather(lat, lon) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weatherIcon = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-      const weatherData = `
+      const weatherIcon = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      const weatherDetails = `
         <div class="weather-details">
           <p><strong>Location:</strong> ${data.name}</p>
           <p><strong>Temperature:</strong> ${data.main.temp} °F</p>
-          <p><strong>Conditions:</strong> <img src="${weatherIcon}" alt="${data.weather[0].description}" /> ${data.weather[0].description}</p>
+          <p><strong>Conditions:</strong> 
+            <img src="${weatherIcon}" alt="${data.weather[0].description}" />
+            ${data.weather[0].description}
+          </p>
         </div>
       `;
-      document.getElementById('weather-data').innerHTML = weatherData;
+      document.getElementById('weather-data').innerHTML = weatherDetails;
     })
     .catch((error) => {
       console.error('Error fetching weather data:', error);
@@ -110,8 +112,10 @@ function fetchWeather(lat, lon) {
     });
 }
 
-// Fetch weather for location
+// Fetch weather for Angel's Rest location
 fetchWeather(45.56065, -122.17241);
+
+
 
 // Function to parse and visualize the TCX file
 function parseTCXFile(filePath) {
