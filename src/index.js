@@ -41,8 +41,8 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-122.11841, 45.57893 , 1500],
-    tilt: 30,
+    position: [-121.77728, 45.30277, 1500],
+    tilt: 40,
   },
 });
 
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-122.11841, 45.57893],
+  center: [-121.77728, 45.30277],
   zoom: 7,
   ui: {
     components: [],
@@ -113,7 +113,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(45.57893, -122.11841);
+fetchWeather(45.30277, -121.77728);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/WahkeenaandMultnomahFalls.tcx');
+parseTCXFile('./assets/data/MirrorLakeLoopTrail.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {

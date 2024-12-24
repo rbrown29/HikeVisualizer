@@ -30,6 +30,7 @@
     "build:smithRock": "webpack --entry ./src/index.js --output-path ./build/SmithRock/$(date +%Y%m%d%H%M%S) --output-filename SmithRock.bundle.js",
     "build:eagleCreek": "webpack --entry ./src/index.js --output-path ./build/EagleCreek/$(date +%Y%m%d%H%M%S) --output-filename EagleCreek.bundle.js",
     "build:multnomahWahkeena": "webpack --entry ./src/index.js --output-path ./build/MultnomahWahkeena/$(date +%Y%m%d%H%M%S) --output-filename MultnomahWahkeena.bundle.js",
+    "build:mirrorLake": "webpack --entry ./src/index.js --output-path ./build/MirrorLake/$(date +%Y%m%d%H%M%S) --output-filename MirrorLake.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }
