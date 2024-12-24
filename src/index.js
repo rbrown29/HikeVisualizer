@@ -41,7 +41,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-121.13789, 44.36515, 1500],
+    position: [-121.91970, 45.636574, 1500],
     tilt: 50,
   },
 });
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-121.13789, 44.36515],
+  center: [-121.91970, 45.636574],
   zoom: 7,
   ui: {
     components: [],
@@ -113,7 +113,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(44.36515, -121.13789);
+fetchWeather(45.636574, -121.91970);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/MiseryRidgeandSummitTrailLoop.tcx');
+parseTCXFile('./assets/data/TunnelFalls.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {

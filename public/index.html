@@ -6,7 +6,7 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <title>Smith Rock</title>
+    <title>Eagle Creek to Tunnel Falls</title>
     <link
       rel="icon"
       href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.visitoregon.com%2Fwp-content%2Fuploads%2F2019%2F04%2Ffavicon-oregon.png&f=1&nofb=1&ipt=f7a850c9079ccad55b38256e15f82a530092bf25960186c7cdbf14c06ebb1068&ipo=images"
@@ -20,37 +20,39 @@
     <div id="viewDiv"></div>
     <div class="main">
       <div class="title">
-        <h3>Smith Rock</h3>
+        <h3>Eagle Creek to Tunnel Falls</h3>
       </div>
       <div class="sections">
         <div class="section">
           <div id="miniMap"></div>
         </div>
         <div class="section">
-          <button id="openButton">View Smith Rock</button>
+          <button id="openButton">View Eagle Creek</button>
           <button id="hikeHome">Oregon Hikes</button>
           <br />
           <br />
           <div class="video-container">
             <video
               id="video"
-              src="/assets/video/SmithRock.mp4"
-              title="Smith Rock"
+              src="/assets/video/EagleCreek.mp4"
+              title="Eagle Creek to Tunnel Falls"
               controls
             ></video>
             <i id="video-overlay" class="fas fa-play-circle"></i>
           </div>
           <p>
-            Smith Rock is a popular hiking destination in Oregon. The park is
-            known for its rock climbing, hiking, and mountain biking. The park
-            is located in central Oregon near the town of Terrebonne. The park
-            is home to several hiking trails that offer stunning views of the
-            surrounding area. The park is also home to several rock climbing
-            routes that are popular with climbers from around the world.
+            Tunnel Falls is the traditional turnaround spot for many on the
+            Eagle Creek Trail, and it is indeed a splendid climax. Over the last
+            thousand years, the falls have carved a majestic basin here,
+            plunging 160 feet from towering basalt cliffs to the rushing creek
+            bed below.
           </p>
-          <div id="profile">
-          </div>          
-          <p> Created by: <a href="https://interactive-reality.netlify.app/" target="_blank">Richard Brown</a>
+          <div id="profile"></div>
+          <p>
+            Created by:
+            <a href="https://interactive-reality.netlify.app/" target="_blank"
+              >Richard Brown</a
+            >
           </p>
         </div>
       </div>
@@ -58,7 +60,7 @@
     <script>
       const openButton = document.getElementById("openButton");
       openButton.addEventListener("click", () => {
-        window.open("https://oregon-hikes.onrender.com/viewhike/2", "_blank");
+        window.open("https://oregon-hikes.onrender.com/viewhike/3#!", "_blank");
       });
 
       const hikeHome = document.getElementById("hikeHome");
