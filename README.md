@@ -56,8 +56,8 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 ```json
 {
   "scripts": {
-    "build:angelsRest": "webpack --entry ./src/index.js --output-path ./dist/AngelsRest --output-filename AngelsRest.bundle.js",
-    "build:smithRock": "webpack --entry ./src/index.js --output-path ./dist/SmithRock --output-filename SmithRock.bundle.js"
+    "build:angelsRest": "webpack --entry ./src/index.js --output-path ./build/AngelsRest --output-filename AngelsRest.bundle.js",
+    "build:smithRock": "webpack --entry ./src/index.js --output-path ./build/SmithRock --output-filename SmithRock.bundle.js"
   }
 }
 ```
