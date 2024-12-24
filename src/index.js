@@ -41,8 +41,8 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-121.91970, 45.636574, 1500],
-    tilt: 50,
+    position: [-122.11841, 45.57893 , 1500],
+    tilt: 30,
   },
 });
 
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-121.91970, 45.636574],
+  center: [-122.11841, 45.57893],
   zoom: 7,
   ui: {
     components: [],
@@ -113,7 +113,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(45.636574, -121.91970);
+fetchWeather(45.57893, -122.11841);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/TunnelFalls.tcx');
+parseTCXFile('./assets/data/WahkeenaandMultnomahFalls.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
