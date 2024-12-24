@@ -27,8 +27,8 @@
   },
   "scripts": {
     "build:angelsRest": "webpack --entry ./src/index.js --output-path ./dist/AngelsRest/$(date +%Y%m%d%H%M%S) --output-filename AngelsRest.bundle.js",
-    "build:smithRock": "webpack --entry ./src/smithRock.js --output-path ./dist/SmithRock/$(date +%Y%m%d%H%M%S) --output-filename SmithRock.bundle.js",
-    "build:eagleCreek": "webpack --entry ./src/index.js --output-path ./dist/EagleCreek/$(date +%Y%m%d%H%M%S) --output-filename EagleCreek.bundle.js",
+    "build:smithRock": "webpack --entry ./src/index.js --output-path ./build/SmithRock/$(date +%Y%m%d%H%M%S) --output-filename SmithRock.bundle.js",
+    "build:eagleCreek": "webpack --entry ./src/index.js --output-path ./build/EagleCreek/$(date +%Y%m%d%H%M%S) --output-filename EagleCreek.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }

@@ -41,7 +41,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-122.17241, 45.56065, 1500],
+    position: [-121.13789, 44.36515, 1500],
     tilt: 50,
   },
 });
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-122.17241, 45.56065],
+  center: [-121.13789, 44.36515],
   zoom: 7,
   ui: {
     components: [],
@@ -112,8 +112,8 @@ function fetchWeather(lat, lon) {
     });
 }
 
-// Fetch weather for Angel's Rest location
-fetchWeather(45.56065, -122.17241);
+// Fetch weather for location
+fetchWeather(44.36515, -121.13789);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/AngelsRest.tcx');
+parseTCXFile('./assets/data/MiseryRidgeandSummitTrailLoop.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
