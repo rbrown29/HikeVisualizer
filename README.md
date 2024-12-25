@@ -33,7 +33,7 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone repository-url
    ```
 
 2. Install dependencies:
