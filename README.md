@@ -43,7 +43,7 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 
 3. Create a `.env` file for environment variables:
    ```bash
-   echo "REACT_APP_OPENWEATHER_API_KEY=your_api_key_here" > .env
+   REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
    ```
 
 4. Build commands for each trail example (see package.json):
