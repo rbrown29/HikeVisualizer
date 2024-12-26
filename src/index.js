@@ -41,7 +41,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-121.77728, 45.30277, 1500],
+    position: [-124.1078, 44.2805, 1500],
     tilt: 40,
   },
 });
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-121.77728, 45.30277],
+  center: [-124.1078, 44.2805],
   zoom: 7,
   ui: {
     components: [],
@@ -113,7 +113,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(45.30277, -121.77728);
+fetchWeather(44.2805, -124.1078);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/MirrorLakeLoopTrail.tcx');
+parseTCXFile('./assets/data/CapePerpetuaHike.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {

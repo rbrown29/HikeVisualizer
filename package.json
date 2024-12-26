@@ -31,6 +31,7 @@
     "build:eagleCreek": "webpack --entry ./src/index.js --output-path ./build/EagleCreek/$(date +%Y%m%d%H%M%S) --output-filename EagleCreek.bundle.js",
     "build:multnomahWahkeena": "webpack --entry ./src/index.js --output-path ./build/MultnomahWahkeena/$(date +%Y%m%d%H%M%S) --output-filename MultnomahWahkeena.bundle.js",
     "build:mirrorLake": "webpack --entry ./src/index.js --output-path ./build/MirrorLake/$(date +%Y%m%d%H%M%S) --output-filename MirrorLake.bundle.js",
+    "build:capePerpetua": "webpack --entry ./src/index.js --output-path ./build/capePerpetua/$(date +%Y%m%d%H%M%S) --output-filename capePerpetua.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }
