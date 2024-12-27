@@ -9,6 +9,7 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 - [Multnomah-Wahkeena](https://multnomah-wahkeenaelevation.netlify.app/)
 - [MirrorLake](https://mirrorlakeelevation.netlify.app/)
 - [CapePerpetua](https://capeperpetuaelevation.netlify.app/)
+- [GarfieldPeak](https://garfieldpeakelevation.netlify.app/)
 
 ## Features
 - Interactive 3D maps using ArcGIS
