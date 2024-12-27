@@ -41,7 +41,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-124.1078, 44.2805, 1500],
+    position: [-122.1435, 42.9109, 1500],
     tilt: 40,
   },
 });
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-124.1078, 44.2805],
+  center: [-122.1435, 42.9109],
   zoom: 7,
   ui: {
     components: [],
@@ -113,7 +113,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(44.2805, -124.1078);
+fetchWeather(42.9109, -122.1435);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/CapePerpetuaHike.tcx');
+parseTCXFile('./assets/data/GarfieldPeak.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
