@@ -24,11 +24,23 @@ const brightGreen = [8, 255, 8];
 const mainView = new SceneView({
   map: new ArcGISWebScene({
     basemap: 'satellite',
-    ground: 'world-topobathymetry',
+    ground: 'world-elevation',
+    humidityEffect: 'high',
+    atmosphere: {
+      quality: 'high',
+    },
+    lighting: {
+      date: new Date('Sun Mar 21 2021 12:00:00 GMT-0700 (Pacific Daylight Time)'),
+      directShadowsEnabled: true,
+    },
+    Hillshade : {
+      enable: true,
+      quality: 'high',
+    },
     layers: [
       new TileLayer({
         portalItem: {
-          id: '1b243539f4514b6ba35e7d995890db1d',
+          id: '52bdc7ab7fb044d98add148764eaa30a',
         },
         opacity: 0.3,
       }),

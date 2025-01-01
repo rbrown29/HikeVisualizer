@@ -11,6 +11,7 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 - [CapePerpetua](https://capeperpetuaelevation.netlify.app/)
 - [GarfieldPeak](https://garfieldpeakelevation.netlify.app/)
 - [CasecadeHead](https://cascadeheadelevation.netlify.app/)
+- [CapeKiwanda](https://capekiwandaelevation.netlify.app/)
 
 ## Features
 - Interactive 3D maps using ArcGIS
