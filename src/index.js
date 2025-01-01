@@ -41,7 +41,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-122.1435, 42.9109, 1500],
+    position: [-123.99234, 45.04183, 1500],
     tilt: 40,
   },
 });
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-122.1435, 42.9109],
+  center: [-123.99234, 45.04183],
   zoom: 7,
   ui: {
     components: [],
@@ -113,7 +113,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(42.9109, -122.1435);
+fetchWeather(45.04183, -123.99234);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/GarfieldPeak.tcx');
+parseTCXFile('./assets/data/CascadeHeadTrail.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
