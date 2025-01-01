@@ -34,6 +34,7 @@
     "build:capePerpetua": "webpack --entry ./src/index.js --output-path ./build/capePerpetua/$(date +%Y%m%d%H%M%S) --output-filename capePerpetua.bundle.js",
     "build:garfieldPeak": "webpack --entry ./src/index.js --output-path ./build/garfieldPeak/$(date +%Y%m%d%H%M%S) --output-filename garfieldPeak.bundle.js",
     "build:cascadeHead": "webpack --entry ./src/index.js --output-path ./build/cascadeHead/$(date +%Y%m%d%H%M%S) --output-filename cascadeHead.bundle.js",
+    "build:capeKiwanda": "webpack --entry ./src/index.js --output-path ./build/capeKiwanda/$(date +%Y%m%d%H%M%S) --output-filename capeKiwanda.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }

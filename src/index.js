@@ -24,7 +24,7 @@ const brightGreen = [8, 255, 8];
 const mainView = new SceneView({
   map: new ArcGISWebScene({
     basemap: 'satellite',
-    ground: 'world-elevation',
+    ground: 'world-topobathymetry',
     layers: [
       new TileLayer({
         portalItem: {
@@ -41,7 +41,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-123.99234, 45.04183, 1500],
+    position: [-123.96697,45.20239, 1500],
     tilt: 40,
   },
 });
@@ -67,7 +67,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-123.99234, 45.04183],
+  center: [-123.96697,  45.20239],
   zoom: 7,
   ui: {
     components: [],
@@ -113,7 +113,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(45.04183, -123.99234);
+fetchWeather(45.20239, -123.96697);
 
 
 
@@ -185,7 +185,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/CascadeHeadTrail.tcx');
+parseTCXFile('./assets/data/CapeKiwanda.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
