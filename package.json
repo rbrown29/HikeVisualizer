@@ -37,6 +37,7 @@
     "build:capeKiwanda": "webpack --entry ./src/index.js --output-path ./build/capeKiwanda/$(date +%Y%m%d%H%M%S) --output-filename capeKiwanda.bundle.js",
     "build:TamolitchPool": "webpack --entry ./src/index.js --output-path ./build/TamolitchPool/$(date +%Y%m%d%H%M%S) --output-filename TamolitchPool.bundle.js",
     "build:opalPool": "webpack --entry ./src/index.js --output-path ./build/opalPool/$(date +%Y%m%d%H%M%S) --output-filename opalPool.bundle.js",
+    "build:capeFalcon": "webpack --entry ./src/index.js --output-path ./build/capeFalcon/$(date +%Y%m%d%H%M%S) --output-filename capeFalcon.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }

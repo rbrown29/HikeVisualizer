@@ -53,7 +53,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-122.26460, 44.85980, 1500],
+    position: [-123.95607,45.76312, 1500],
     tilt: 70,
   },
 });
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-122.26460, 44.85980],
+  center: [-123.95607,45.76312],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(44.85980, -122.26460);
+fetchWeather(45.76312, -123.95607);
 
 
 
@@ -197,7 +197,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/OpalCreek.tcx');
+parseTCXFile('./assets/data/CapeFalconTrail.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
