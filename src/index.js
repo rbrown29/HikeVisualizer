@@ -53,7 +53,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-122.03567,44.29022, 1500],
+    position: [-122.26460, 44.85980, 1500],
     tilt: 70,
   },
 });
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-122.03567, 44.29022],
+  center: [-122.26460, 44.85980],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(44.29022, -122.03567);
+fetchWeather(44.85980, -122.26460);
 
 
 
@@ -197,7 +197,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/TamolitchBluePool.tcx');
+parseTCXFile('./assets/data/OpalCreek.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {

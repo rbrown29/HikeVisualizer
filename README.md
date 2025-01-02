@@ -13,6 +13,7 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 - [CasecadeHead](https://cascadeheadelevation.netlify.app/)
 - [CapeKiwanda](https://capekiwandaelevation.netlify.app/)
 - [TamolitchPool](https://tamolitchpoolelevation.netlify.app/)
+- [OpalPool](https://opalpoolelevation.netlify.app/)
 
 ## Features
 - Interactive 3D maps using ArcGIS
