@@ -40,7 +40,7 @@ const mainView = new SceneView({
     layers: [
       new TileLayer({
         portalItem: {
-          id: '52bdc7ab7fb044d98add148764eaa30a',
+          id: '7029fb60158543ad845c7e1527af11e4',
         },
         opacity: 0.3,
       }),
@@ -53,8 +53,8 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-123.96697,45.20239, 1500],
-    tilt: 40,
+    position: [-122.03567,44.29022, 1500],
+    tilt: 70,
   },
 });
 
@@ -66,7 +66,7 @@ const miniMap = new MapView({
       baseLayers: [
         new TileLayer({
           portalItem: {
-            id: '1b243539f4514b6ba35e7d995890db1d',
+            id: '7029fb60158543ad845c7e1527af11e4',
           },
           opacity: 0.4,
         }),
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-123.96697,  45.20239],
+  center: [-122.03567, 44.29022],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(45.20239, -123.96697);
+fetchWeather(44.29022, -122.03567);
 
 
 
@@ -197,7 +197,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/CapeKiwanda.tcx');
+parseTCXFile('./assets/data/TamolitchBluePool.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
