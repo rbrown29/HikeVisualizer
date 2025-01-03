@@ -16,6 +16,7 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 - [OpalPool](https://opalpoolelevation.netlify.app/)
 - [CapeFalcon](https://capefalconelevation.netlify.app/)
 - [AdamsGlacier](https://adamsglacierelevation.netlify.app/)
+- [BattleAxLoop](https://battleaxelevation.netlify.app/)
 
 ## Features
 - Interactive 3D maps using ArcGIS

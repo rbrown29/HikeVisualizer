@@ -42,18 +42,18 @@ const mainView = new SceneView({
         portalItem: {
           id: '7029fb60158543ad845c7e1527af11e4',
         },
-        opacity: 0.3,
+        opacity: 0.2,
       }),
       new VectorTileLayer({
         portalItem: {
-          id: '8d91bd39e873417ea21673e0fee87604',
+          id: 'f9a070ff745b4d368b312eb647c53a4e',
         },
       }),
     ],
   }),
   container: 'viewDiv',
   camera: {
-    position: [-121.5523, 46.2883, 1500],
+    position: [-122.1250, 44.8252, 1500],
     tilt: 70,
   },
 });
@@ -66,20 +66,20 @@ const miniMap = new MapView({
       baseLayers: [
         new TileLayer({
           portalItem: {
-            id: '7029fb60158543ad845c7e1527af11e4',
+            id: 'f9a070ff745b4d368b312eb647c53a4e',
           },
           opacity: 0.4,
         }),
         new VectorTileLayer({
           portalItem: {
-            id: '378fd91096fe478cb78a4e06b639b715',
+            id: 'b69e76a446ac479998ff31de839ba323',
           },
           blendMode: 'multiply',
         }),
       ],
     }),
   }),
-  center: [-121.5523, 46.2883],
+  center: [-122.1250, 44.8252],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(46.2883, -121.5523);
+fetchWeather(44.8252, -122.1250);
 
 
 
@@ -162,7 +162,7 @@ function parseTCXFile(filePath) {
         mainView.when(() => {
           mainView.graphics.removeAll();
           mainView.graphics.add(graphic);
-          mainView.goTo(polyline.extent.expand(2));
+          mainView.goTo(polyline.extent.expand(1.5));
           mainView.graphics.add3D(graphic);
 
         });
@@ -197,7 +197,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/AdamsGlacierMeadows.tcx');
+parseTCXFile('./assets/data/BattleAxMountain.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {

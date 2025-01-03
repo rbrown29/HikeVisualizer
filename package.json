@@ -39,6 +39,7 @@
     "build:opalPool": "webpack --entry ./src/index.js --output-path ./build/opalPool/$(date +%Y%m%d%H%M%S) --output-filename opalPool.bundle.js",
     "build:capeFalcon": "webpack --entry ./src/index.js --output-path ./build/capeFalcon/$(date +%Y%m%d%H%M%S) --output-filename capeFalcon.bundle.js",
     "build:adamsGlacier": "webpack --entry ./src/index.js --output-path ./build/adamsGlacier/$(date +%Y%m%d%H%M%S) --output-filename adamsGlacier.bundle.js",
+    "build:battleAx": "webpack --entry ./src/index.js --output-path ./build/battleAx/$(date +%Y%m%d%H%M%S) --output-filename battleAx.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }
