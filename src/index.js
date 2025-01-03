@@ -53,7 +53,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-123.95607,45.76312, 1500],
+    position: [-121.5523, 46.2883, 1500],
     tilt: 70,
   },
 });
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-123.95607,45.76312],
+  center: [-121.5523, 46.2883],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(45.76312, -123.95607);
+fetchWeather(46.2883, -121.5523);
 
 
 
@@ -197,7 +197,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/CapeFalconTrail.tcx');
+parseTCXFile('./assets/data/AdamsGlacierMeadows.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
