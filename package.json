@@ -43,6 +43,7 @@
     "build:belknapCrater": "webpack --entry ./src/index.js --output-path ./build/belknapCrater/$(date +%Y%m%d%H%M%S) --output-filename belknapCrater.bundle.js",
     "build:blueBasin": "webpack --entry ./src/index.js --output-path ./build/blueBasin/$(date +%Y%m%d%H%M%S) --output-filename blueBasin.bundle.js",
     "build:cachedLake": "webpack --entry ./src/index.js --output-path ./build/cachedLake/$(date +%Y%m%d%H%M%S) --output-filename cachedLake.bundle.js",
+    "build:iceLake": "webpack --entry ./src/index.js --output-path ./build/iceLake/$(date +%Y%m%d%H%M%S) --output-filename iceLake.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }

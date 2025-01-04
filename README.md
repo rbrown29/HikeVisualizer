@@ -20,6 +20,7 @@ Trail Visualizer is a web application for viewing and interacting with hiking tr
 - [BelknapCrater](https://belknapcraterelevation.netlify.app/)
 - [BlueBasin](https://bluebasinelevation.netlify.app/)
 - [CachedLake](https://cachedlakeelevation.netlify.app/)
+- [IceLake](https://icelakeelevation.netlify.app/)
 
 ## Features
 - Interactive 3D maps using ArcGIS

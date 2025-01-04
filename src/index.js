@@ -53,7 +53,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-117.40668, 45.06799, 1500],
+    position: [-117.212834, 45.267040, 1500],
     tilt: 50,
   },
 });
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-117.40668, 45.06799],
+  center: [-117.212834, 45.267040],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(45.06799, -117.40668);
+fetchWeather(45.267040, -117.212834);
 
 
 
@@ -196,7 +196,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/CacheMountain.tcx');
+parseTCXFile('./assets/data/IceLake.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
