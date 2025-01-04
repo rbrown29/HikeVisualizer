@@ -53,7 +53,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-121.8098, 44.2602, 1500],
+    position: [-119.6311, 44.5955, 1500],
     tilt: 50,
   },
 });
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-121.8098, 44.2602],
+  center: [-119.6311, 44.5955],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(44.2602, -121.8098);
+fetchWeather(44.5955, -119.6311);
 
 
 
@@ -196,7 +196,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/BelknapCrater.tcx');
+parseTCXFile('./assets/data/BlueBasin.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {

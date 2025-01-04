@@ -41,6 +41,7 @@
     "build:adamsGlacier": "webpack --entry ./src/index.js --output-path ./build/adamsGlacier/$(date +%Y%m%d%H%M%S) --output-filename adamsGlacier.bundle.js",
     "build:battleAx": "webpack --entry ./src/index.js --output-path ./build/battleAx/$(date +%Y%m%d%H%M%S) --output-filename battleAx.bundle.js",
     "build:belknapCrater": "webpack --entry ./src/index.js --output-path ./build/belknapCrater/$(date +%Y%m%d%H%M%S) --output-filename belknapCrater.bundle.js",
+    "build:blueBasin": "webpack --entry ./src/index.js --output-path ./build/blueBasin/$(date +%Y%m%d%H%M%S) --output-filename blueBasin.bundle.js",
     "watch": "webpack -w",
     "start": "webpack serve --mode development"
   }
