@@ -53,8 +53,8 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-122.1250, 44.8252, 1500],
-    tilt: 70,
+    position: [-121.8098, 44.2602, 1500],
+    tilt: 50,
   },
 });
 
@@ -68,7 +68,7 @@ const miniMap = new MapView({
           portalItem: {
             id: 'f9a070ff745b4d368b312eb647c53a4e',
           },
-          opacity: 0.4,
+          opacity: 0.2,
         }),
         new VectorTileLayer({
           portalItem: {
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-122.1250, 44.8252],
+  center: [-121.8098, 44.2602],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(44.8252, -122.1250);
+fetchWeather(44.2602, -121.8098);
 
 
 
@@ -162,9 +162,8 @@ function parseTCXFile(filePath) {
         mainView.when(() => {
           mainView.graphics.removeAll();
           mainView.graphics.add(graphic);
-          mainView.goTo(polyline.extent.expand(1.5));
+          mainView.goTo(polyline.extent.expand(2));
           mainView.graphics.add3D(graphic);
-
         });
 
         miniMap.when(() => {
@@ -197,7 +196,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/BattleAxMountain.tcx');
+parseTCXFile('./assets/data/BelknapCrater.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
