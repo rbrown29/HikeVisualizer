@@ -53,7 +53,7 @@ const mainView = new SceneView({
   }),
   container: 'viewDiv',
   camera: {
-    position: [-119.6311, 44.5955, 1500],
+    position: [-117.40668, 45.06799, 1500],
     tilt: 50,
   },
 });
@@ -79,7 +79,7 @@ const miniMap = new MapView({
       ],
     }),
   }),
-  center: [-119.6311, 44.5955],
+  center: [-117.40668, 45.06799],
   zoom: 7,
   ui: {
     components: [],
@@ -125,7 +125,7 @@ function fetchWeather(lat, lon) {
 }
 
 // Fetch weather for location
-fetchWeather(44.5955, -119.6311);
+fetchWeather(45.06799, -117.40668);
 
 
 
@@ -196,7 +196,7 @@ function parseTCXFile(filePath) {
 }
 
 // Load and parse the TCX file
-parseTCXFile('./assets/data/BlueBasin.tcx');
+parseTCXFile('./assets/data/CacheMountain.tcx');
 
 // Responsive map adjustments
 window.addEventListener('resize', () => {
